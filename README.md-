@@ -1,15 +1,1 @@
- ## Projet de Portfolio en Next.js
-
-## Introduction
-
-** Ce projet se concentre sur la création d'un portfolio personnel en utilisant le framework Next.js. Il s'agit d'un projet individuel où chaque étudiant personnalise les informations et l'apparence selon ses préférences.
-
- ##Constitution du Projet
-Le projet de portfolio inclura les fonctionnalités clés suivantes :
-
-Reproduction du portfolio original : Reproduire l'ensemble du projet de la première partie dans Next.js.
-Validation des formulaires : Tous les formulaires doivent inclure une validation appropriée avec des messages adaptés pour l'utilisateur.
-Authentification : Une page de connexion et une page d'inscription reliées à Redux pour la gestion de l'état (le backend est optionnel).
-Témoignages : Pages permettant aux visiteurs de laisser et consulter des témoignages. Redux doit être utilisé pour gérer ces interactions (le backend est optionnel).
-Protection des pages : Toutes les pages, sauf celles de connexion et d'inscription, doivent être protégées. Seuls les utilisateurs authentifiés peuvent y accéder.
-
+## Mon-Portfolio
