@@ -1,0 +1,85 @@
+/* Footer.css */
+
+.footer-content {
+  background-color: #1a202c;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #2b6cb0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.footer-link {
+  color: #2b6cb0;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #63b3ed;
+}
+
+.footer-icon {
+  margin-right: 5px;
+}
+
+/* Media Queries pour la réactivité */
+
+/* Largeur de l'écran 1200px et plus */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* Largeur de l'écran entre 768px et 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  form {
+    max-width: 400px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Largeur de l'écran moins de 768px */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    max-width: 300px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}

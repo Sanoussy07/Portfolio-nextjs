@@ -1,0 +1,130 @@
+
+/* Conteneur principal pour la page des témoignages */
+.testimonials-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #4b79a1 0%, #283e51 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligne le contenu vers le haut */
+  position: relative;
+  overflow: hidden;
+  padding-top: 60px; /* Ajoute un espace en haut pour le positionnement */
+}
+
+/* Ajout de formes géométriques animées */
+.testimonials-container::before,
+.testimonials-container::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+.testimonials-container::before {
+  top: -200px;
+  left: -200px;
+}
+
+.testimonials-container::after {
+  bottom: -200px;
+  right: -200px;
+  animation-delay: 3s;
+}
+
+/* Animation de flottement */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Style du titre */
+h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+/* Style du paragraphe */
+p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+/* Style pour le lien */
+.leave-testimonial-link {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-color: #007acc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.leave-testimonial-link:hover {
+  background-color: #005f99;
+}
+/* Media Queries pour la réactivité */
+
+/* Largeur de l'écran 1200px et plus */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* Largeur de l'écran entre 768px et 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  form {
+    max-width: 400px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Largeur de l'écran moins de 768px */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    max-width: 300px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}

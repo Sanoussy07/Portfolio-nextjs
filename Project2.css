@@ -1,0 +1,139 @@
+
+.project2-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff; 
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding-top: 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+.project2-container::before,
+.project2-container::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  animation: float 6s ease-in-out infinite;
+}
+
+.project2-container::before {
+  top: -200px;
+  left: -200px;
+}
+
+.project2-container::after {
+  bottom: -200px;
+  right: -200px;
+  animation-delay: 3s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+h3, h4 {
+  color: #fff;
+}
+
+.project2-image {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.description {
+  line-height: 1.6;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.tech-section {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-list li {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  color: #fff;
+}
+
+.tech-list li .icon {
+  margin-right: 10px;
+  color: #ff4500; 
+}
+/* Media Queries pour la réactivité */
+
+/* Largeur de l'écran 1200px et plus */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/* Largeur de l'écran entre 768px et 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  form {
+    max-width: 400px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Largeur de l'écran moins de 768px */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  form {
+    max-width: 300px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
