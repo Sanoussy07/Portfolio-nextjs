@@ -1,10 +1,10 @@
 import React from 'react'
-import Project1 from '@/Component/Project1'
+import Project2 from '@/Component/Project2'
 
-const project1 = () => {
+const project2 = () => {
   return (
-    <Project1/>
+    <Project2/>
   )
 }
 
-export default project1
+export default project2
