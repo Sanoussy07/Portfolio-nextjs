@@ -1,10 +1,10 @@
 import React from 'react'
-import SignupPage from '@/Component/SignupPage'
+import Project1 from '@/Component/Project1'
 
-const Inscription = () => {
+const project1 = () => {
   return (
-    <SignupPage/>
+    <Project1/>
   )
 }
 
-export default Inscription
+export default project1
