@@ -1,10 +1,10 @@
 import React from 'react'
-import Project2 from '@/Component/Project2'
+import TestimonialsPage from '@/Component/TestimonialsPage'
 
-const project2 = () => {
+const Testimonials = () => {
   return (
-    <Project2/>
+    < TestimonialsPage />
   )
 }
 
-export default project2
+export default Testimonials
