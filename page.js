@@ -1,10 +1,10 @@
 import React from 'react'
-import Login from '@/Component/Login'
+import SignupPage from '@/Component/SignupPage'
 
-const login = () => {
+const Inscription = () => {
   return (
-    <Login/>
+    <SignupPage/>
   )
 }
 
-export default login
+export default Inscription
