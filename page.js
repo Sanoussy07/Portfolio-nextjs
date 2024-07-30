@@ -1,10 +1,13 @@
-import React from 'react'
-import TestimonialsPage from '@/Component/TestimonialsPage'
+import React from 'react';
+import ContactPage from '@/Component/ContactPage';
+import withAuth from '@/Component/withAuth'; 
 
-const Testimonials = () => {
+const Contact = () => {
   return (
-    < TestimonialsPage />
-  )
-}
+    <withAuth>
+    <ContactPage />
+    </withAuth>
+  );
+};
 
-export default Testimonials
+export default Contact;
